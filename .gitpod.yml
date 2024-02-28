@@ -1,0 +1,15 @@
+# Image of workspace. Learn more: https://www.gitpod.io/docs/configure/workspaces/workspace-image
+image: gitpod/workspace-full:latest
+
+# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+tasks:
+  - name: Install Angular
+  - init: >
+      npm install -g @angular/cli@16 &&
+      ng new angular-project &&
+      cd angular-project &&
+      npm install &&
+      ng serve --disable-host-check       
+
+
+# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
